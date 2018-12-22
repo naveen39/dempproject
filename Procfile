@@ -1,1 +1,1 @@
-gunicorn  dempproject:application -b demodjango1.herokuapp.com
+gunicorn  dempproject:application -b 0.0.0.0:5000
