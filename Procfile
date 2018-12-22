@@ -1,1 +1,1 @@
-gunicorn  dempproject:application -b 127.0.0.1:8000
+gunicorn  dempproject:application -b demodjango1.herokuapp.com
