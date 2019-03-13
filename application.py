@@ -91,7 +91,7 @@ def tords2():
         print(datetime.datetime.now(),' ',url)
         try:
             year_existed_or_not_qry=db.session.query(irsTOsfdcIntegration_year).filter(irsTOsfdcIntegration_year.year_integer == processing_year)
-            print(year_existed_or_not_qry)
+            print('year_existed_or_not_qry--------------------',year_existed_or_not_qry)
 
             #year = ResultProxy.fetchone()
             #print(year is None,'---year--',year)
@@ -114,6 +114,8 @@ def tords2():
                 
             else:
                 print(year_existed_or_not_qry,type(year_existed_or_not_qry))
+                for i in year_existed_or_not_qry:
+                    print(i.id,'------i--',i)
 
 ##                #year=Year.objects.filter(year_integer=processing_year)
 ##                #print('year--',year, len(year))
