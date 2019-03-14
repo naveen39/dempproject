@@ -1,0 +1,9 @@
+version: 1
+cron:
+  - name: "tords2"
+    url: "/tords2"
+    schedule: "*/5 * * * *"
+  - name: "tords"
+    url: "/tords"
+    schedule: "* * * * *"
+  
